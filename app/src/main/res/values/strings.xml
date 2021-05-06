@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Liquor Management</string>
+    <string name="save_record">添加白酒记录</string>
+    <string name="record_list">查询白酒列表</string>
+    <string name="name">名称</string>
+    <string name="description">简介</string>
+</resources>
