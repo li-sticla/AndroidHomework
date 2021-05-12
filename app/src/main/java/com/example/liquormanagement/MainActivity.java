@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         mSQLiteHelper = new SQLiteHelper(this, "RECORDDB.sqlite", null, 1);
 
         //creating table in database
-        mSQLiteHelper.queryData("CREATE TABLE IF NOT EXISTS RECORD(id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, age VARCHAR, phone VARCHAR, image BLOB)");
+        mSQLiteHelper.queryData("CREATE TABLE IF NOT EXISTS RECORD(id INTEGER PRIMARY KEY AUTOINCREMENT, name VARCHAR, description VARCHAR, image BLOB)");
 
 
         //select image by on imageview click

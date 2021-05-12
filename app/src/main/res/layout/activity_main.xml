@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:padding="10dp">
 
         <ImageView
@@ -21,9 +21,9 @@
             android:layout_alignParentEnd="true"
             android:layout_marginStart="85dp"
             android:layout_marginTop="167dp"
-            android:layout_marginEnd="82dp"
+            android:layout_marginEnd="85dp"
             android:layout_marginBottom="30dp"
-            android:background="@color/white"
+            android:background="@color/purple_200"
             android:src="@drawable/addphoto" />
 
         <EditText
@@ -34,7 +34,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="@string/name" />
+            android:hint="@string/name"
+            android:textColorHint="@color/white" />
 
         <EditText
             android:id="@+id/edtDescription"
@@ -45,8 +46,8 @@
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="@string/description"
+            android:textColorHint="@color/white"
             tools:visibility="visible" />
-
 
         <Button
             android:id="@+id/btnAdd"
@@ -68,6 +69,54 @@
             android:layout_centerHorizontal="true"
             android:minWidth="160dp"
             android:text="@string/record_list" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="49dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/btnList"
+            app:srcCompat="@drawable/search" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="49dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/btnAdd"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toStartOf="@+id/btnAdd"
+            app:srcCompat="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:layout_alignBottom="@+id/edtName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/edtName"
+            app:srcCompat="@drawable/liquor" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="44dp"
+            android:layout_height="49dp"
+            android:layout_alignBottom="@+id/edtDescription"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@+id/edtDescription"
+            app:srcCompat="@drawable/glass" />
 
     </RelativeLayout>
 

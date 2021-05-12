@@ -25,7 +25,7 @@ public class SQLiteHelper extends SQLiteOpenHelper{
     public void insertData(String name,  String description, byte[] image){
         SQLiteDatabase database = getWritableDatabase();
         //query to insert record in database table
-        String sql = "INSERT INTO RECORD VALUES(NULL, ?, ?, ?, ?)"; //where "RECORD" is table name in database we will create in mainActivity
+        String sql = "INSERT INTO RECORD VALUES(NULL, ?, ?, ?)"; //where "RECORD" is table name in database we will create in mainActivity
 
         SQLiteStatement statement = database.compileStatement(sql);
         statement.clearBindings();
